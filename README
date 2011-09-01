@@ -1,0 +1,50 @@
+The works of art in this repository are copyrighted by individual contributors
+and are publicly distributed under the:
+
+                  Creative Commons by Attribution License 3.0
+                  http://creativecommons.org/licenses/by/3.0/
+
+
+Overview
+
+This course will introduce the student to technical, legal, practical,
+cultural, economic, publication, and business aspects of open source software.
+History and rationale for open source software, definitions of key terms,
+advantages/disadvantages, certification, open-source ethics and community.
+Success stories such as Linux, and gcc. Software process and tools Git/CVS/SVN,
+bug tracker, testing, patch diff, source forge, and wiki. Legal issues:
+software patents and copyrights, licensing and assignment, GPL/BSD, LGPL, and
+MIT's QT. Economic issues including funding, business models, shareware, dual
+licenses, contracts, support, and widget frosting. Study of major open-source
+projects including VTK, ITK, Cmake, vxl, Insight Journal, and various
+bioinformatics efforts.
+
+
+
+Origins
+
+This course is in part a result of the generous contribution of
+
+ Sean O’Sullivan
+ RPI Alumnus and Entrepreneur
+
+who made a donation to establish a Center for Open Software.
+
+Read more at:
+
+  http://news.rpi.edu/update.do?artcenterkey=1784&setappvar=page(1).
+
+and at:
+
+  http://rcos.rpi.edu/
+
+The Course Wiki can be found at:
+
+ http://public.kitware.com/OpenSourceSoftwarePractice/index.php/Main_Page
+
+and the Moodle site can be found at:
+
+ https://www.opensourcesoftwarepractice.org/moodle/
+
+
+
