@@ -1,0 +1,164 @@
+
+
+"...Multiple industry analysts have estimated the global spend for
+Information and Communication Technology (ICT) at 3.4 trillion US
+dollars per year. A lot of money (***)."
+
+
+"The shocking part of that number is that it can be argued that one
+trillion US dollars a year are being wasted either on applications that
+are abandoned before they ever go into production, or spent on
+applications that are missing key features or are late to the point of
+interrupting operational capability or both."
+
+
+"To give you an example, in 2004, 2005 and 2006 a company called
+Coverity, which does software defect detection, analyzed the average
+number of defects per thousand lines of code in *proprietary* software
+and compared it to *open source* software. The average, which has
+remained consistent, is that proprietary software contains 20-30 defects
+per thousand lines of code."
+
+
+"When they first measured the Linux kernel back in 2004, the kernel
+consisted of 5.3 million lines of source code. (For comparison, Windows
+XP is reported to weigh in at around 35 million lines of code.) If Linux
+were industry average, one would expect between 100,000 and 150,000 bugs
+or defects across 5.3 million lines of code, and yet the Coverity
+scanners were only able to find 985."
+
+
+"The Linux community got the report and published a message saying,
+“Hey, there's only 985 bugs to look at, let's clean this up!” Within
+*six months*, *every single* defect that the community felt was
+legitimate was corrected. By contrast, if Microsoft wrote industry
+average code, their 35 MLOC code base would contain more than 7 million
+defects! You can see the problem."
+
+
+"In 2005, Coverity remeasured the Linux kernel, which had grown to 5.7
+million lines of code, and found that the defect density had actually
+decreased. So some people wondered if maybe the Linux kernel was not a
+fair test. Maybe something in the water makes the Linux kernel people
+off-the-charts smart. So they looked at 32 other open source
+applications, ranging from the PHP scripting language to the GNU C
+compiler, and what they found was:
+
+
+        that the *worst* of these 32 open source
+        programs was only 50 *times better* than
+        the average proprietary software."
+
+
+
+"In both the proprietary and the open source cases, Developer 1 did
+approximately 20% of everything. If it were true that software worked
+according to industrial logic, any of the programs could have been
+produced by five developers. But of course we know that's not true.
+When you look at the graph, five developers get you to about 40% of
+everything. When you get out to 10-15 developers, you climb up to about
+75-80% of everything."
+
+
+"It turns out that in the proprietary world, project size tended to be
+about 25-35 developers, and projects exhibited what we call a “short
+tail.” .... Well, with Apache back in 2001, they had *388* developers.
+You do see the characteristics of the short tail up through about 10-15
+developers, but after that you get this incredibly long tail out to
+Developer 388. What the paper argues is that this “long tail of
+participation” leads to more features, implemented sooner with fewer bugs.
+
+
+
+"...If we go back to the fact that we're wasting a trillion dollars a
+year, and look at the fact that the proprietary development model is
+causing every proprietary developer to put themselves into a special
+class of hell by being forced to put falsehoods into their own code
+rather than dealing directly with the subject, I think it explains a lot
+of what has been observed by open source software customers like
+
+            * the New York Stock Exchange and
+            * the National Security Agency.
+
+
+Namely,
+that open source software is better, faster and cheaper because at the
+core it works and can be fixed.
+
+
+What you hear in the proprietary world is, “You can't fix it. Maybe
+we'll fix it, maybe we won't. Depends on how we feel.”
+
+
+In the open source world, the mantra is, “If anybody can fix it,
+somebody will.” What is fantastic about the open source community is
+that “anybody” does not mean “anybody at Red Hat” but anybody in the
+community of multiple millions of developers. When you look at the
+quality comparisons, it is obvious that the network effect has come into
+common use."
+
+
+...
+
+
+"We have a terrible problem in that we've been developing software the
+wrong way for 40 years. One out of three dollars are wasted, and yet can
+you imagine a manufacturing company discarding 33% of their products? "
+
+
+
+“Transformation is everybody's job.” Open source provides a model where
+“everybody” can be interpreted to mean literally everybody. Not
+everybody on the shift or everybody at that company. The whole world.
+Developer 388 sees a singular problem with Apache and fixes it because
+he or she saw it. When you integrate that over everybody, you get a
+system that is asymptotically approaching perfection with respect to
+defect rates."
+
+
+"My take ... is that 85% of all break-through innovation comes from
+users, not vendors, and open source is a way to harness the 5/6ths of
+the world sidelined by proprietary software models."
+
+
+
+                                     Michael Tiemman
+
+
+
+
+- Vice President, Open Source Affairs at Red Hat
+- President of the Open Source Initiative
+- President of the GNOME Foundation
+
+
+http://opensolutionsalliance.org/osa/osaalert(apr09)-tiemann.html?x_lf_kt=2&_x_lf_kvid=b63e6e94-dd3f-4d5f-905b-9ea79a559ad8
+
+Summary from the Keynote Addres -
+"Exonovation - Leveraging Innovation from the Edge"
+presented at the "Emerging Technologies in the Enterprise" conference
+http://phillyemergingtech.com/sessions.php
+March 2009
+
+Full presentation PDF available at:
+http://www.chariotsolutions.com/slides/pdfs/ete2009-ExonovationTieman.pdfhttp://www.chariotsolutions.com/slides/pdfs/ete2009-ExonovationTieman.pdf
+
+
+----------
+
+*** NOTES:
+
+  As a reference:
+  US GDP is close to:  $14 Trillion.
+  US Federal budget:    $3 Trillion.
+
+
+
+-------
+
+2001: The Standish Group Estimated $78B/year wasted on “Bad Software”
+2002: NIST Estimated $60B/year lost in US alone due to “software bugs”
+2002: Net profits of Fortune 500 is approximately $68B
+2003: US Federal IT budget set at $59B,
+     History suggests 80% will be wasted, not deployed
+2003: Cost of Worms and Viruses alone range $17B-$55B

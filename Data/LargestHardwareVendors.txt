@@ -1,0 +1,10 @@
+1 	HP 	85393
+2 	Samsung 	74763
+3 	Foxconn 	61800
+4 	Nokia 	46412
+5 	Dell 	44877
+6 	Toshiba 	44242
+7 	Intel 	36320
+8 	LG 	33429
+9 	Cisco 	32840
+10 	Canon 	29299
