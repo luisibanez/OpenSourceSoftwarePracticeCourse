@@ -4,6 +4,21 @@
 \usepackage{graphics}
 
 
+\newcommand{\centeredsizedtext}[4]{
+{
+\setbeamertemplate{navigation symbols}{}
+\setbeamercolor{background canvas}{bg={#1}}
+\color{#2}
+\begin{frame}[plain]
+\fontsize{#3}{#3}\selectfont
+\center
+\begin{center}
+{#4}
+\end{center}
+\end{frame}
+}}
+
+
 \newcommand{\centeredlargetext}[3]{
 {
 \setbeamertemplate{navigation symbols}{}
@@ -68,9 +83,103 @@ Git
 }
 
 \centeredlargetext{black}{white}{
-Git in 10 easy steps
+\texttt{git clone} \emph{repository}
+}
+
+\centeredsizedtext{black}{white}{22pt}{
+\texttt{git clone}
+\vfill
+\texttt{git@github.com:OSEHR/M-Tools.git}
+}
+
+\centeredhugetext{black}{white}{
+\texttt{cd M-Tools}
+}
+
+\centeredhugetext{black}{white}{
+\texttt{git status}
+}
+
+\centeredhugetext{black}{white}{
+\texttt{git remote -v}
+}
+
+\centeredsizedtext{black}{white}{18pt}{
+\texttt{git remote add luisgithub}\\
+\texttt{git@github.com:luisibanez/M-Tools.git}
+}
+
+\centeredhugetext{black}{white}{
+\texttt{git remote -v}
+}
+
+\centeredhugetext{black}{white}{
+\texttt{git branch}
+}
+
+\centeredhugetext{black}{white}{
+\texttt{git fetch origin master}
+}
+
+\centeredhugetext{black}{white}{
+\texttt{git fetch luisgithub master}
+}
+
+\centeredhugetext{black}{white}{
+\texttt{git pull luisgithub master}
+}
+
+\centeredhugetext{black}{white}{
+\texttt{git push luisgithub master}
+}
+
+\centeredhugetext{black}{white}{
+\texttt{git log}
+}
+
+\centeredhugetext{black}{white}{
+\texttt{git log --oneline}
+}
+
+\centeredhugetext{black}{white}{
+\texttt{git blame --} filename
+}
+
+\centeredhugetext{black}{white}{
+\texttt{git blame -- ZZUTREDO.m}
+}
+
+\centeredhugetext{black}{white}{
+\texttt{vim ZZUTREDO.m}
+}
+
+\centeredhugetext{black}{white}{
+\texttt{git status}
+}
+
+\centeredhugetext{black}{white}{
+\texttt{git diff ZZUTREDO.m}
+}
+
+\centeredhugetext{black}{white}{
+\texttt{git add ZZUTREDO.m}
+}
+
+\centeredhugetext{black}{white}{
+\texttt{git status}
+}
+
+\centeredhugetext{black}{white}{
+\texttt{git commit -m 'explanation..'}
+}
+
+\centeredhugetext{black}{white}{
+\texttt{git push luisgithub master}
 }
 
 
+\centeredhugetext{black}{white}{
+END
+}
 
 \end{document}
