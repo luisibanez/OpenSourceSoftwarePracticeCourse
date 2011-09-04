@@ -3,6 +3,20 @@
 
 \usepackage{graphics}
 
+\newcommand{\centeredsizedtext}[4]{
+{
+\setbeamertemplate{navigation symbols}{}
+\setbeamercolor{background canvas}{bg={#1}}
+\color{#2}
+\begin{frame}[plain]
+\fontsize{#3}{#3}\selectfont
+\center
+\begin{center}
+{#4}
+\end{center}
+\end{frame}
+}}
+
 
 \newcommand{\centeredlargetext}[3]{
 {
@@ -36,7 +50,7 @@
 \begin{document}
 
 \title[Open Source]{Introduction to MUMPS}
-\subtitle[]{Get It Done}
+\subtitle[]{M for the Impatient}
 \author[Ibanez]{Dr. Luis Ibanez, Kitware}
 \institute[Kitware]{KITWARE Inc. Clifton Park, NY}
 \date[September 2011]{September 8 2011}
@@ -63,14 +77,220 @@ Images used in this presentation are attributed in the last slide.
 \end{frame}
 }
 
-\centeredhugetext{black}{white}{
+\centeredsizedtext{black}{white}{96}{
 MUMPS
 }
 
+\centeredsizedtext{black}{green}{96}{
+\texttt{\$ gtm}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{GTM>}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{SET X=5}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{WRITE X=5}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S X=8}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{W X=8}
+}
+
+\centeredhugetext{black}{white}{
+One space !
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{HALT}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{\$ gtm}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{GTM>}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{SET X=12.45}
+}
+
+\centeredsizedtext{black}{red}{96}{
+\texttt{SET X= 12.45}
+}
+
+\centeredsizedtext{black}{red}{96}{
+\texttt{SET X =12.45}
+}
+
 \centeredlargetext{black}{white}{
-MUMPS in 10 easy steps
+No extra spaces !
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S Y=1E5}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{W Y}
+}
+
+\centeredsizedtext{black}{red}{96}{
+\texttt{S Y=1A5}
+}
+
+\centeredsizedtext{black}{red}{96}{
+\texttt{S Y=1e5}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{SET D="LINCOLN"}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{W D}
+}
+
+\centeredlargetext{black}{white}{
+Numerical\\
+Operators
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S K=2+3}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S K=2-3}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S K=2*3}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S K=2/3}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S K=9\#2}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S K=9\textbackslash{}2}
 }
 
 
+\centeredsizedtext{black}{green}{96}{
+\texttt{S K=3**2}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S Y=-K}
+}
+
+\centeredlargetext{black}{white}{
+Operator\\
+Precendence
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S K=2+3*5}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S K=2+(3*5)}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S K=3*5+2}
+}
+
+\centeredlargetext{black}{white}{
+Automatic Mode\\
+Conversion
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S N="123"}\\
+\texttt{S K=N+1}\\
+\texttt{W K}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S D="25 MARY"}\\
+\texttt{S K=2*D}\\
+\texttt{W K}
+}
+
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S D="MARY 25"}\\
+\texttt{S K=D}\\
+\texttt{W K}
+}
+
+\centeredlargetext{black}{white}{
+Two Special\\
+Functions
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S X=\$RANDOM(100)}\\
+\texttt{W X}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S X=\$RANDOM(100) W X}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S T=\$HOROLOG}\\
+\texttt{W T}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S T=\$HOROLOG W T}
+}
+
+\centeredlargetext{black}{white}{
+Killing\\
+Variables
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{SET T=5}\\
+\texttt{KILL T}\\
+\texttt{WRITE T}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S T=5}\\
+\texttt{K T}\\
+\texttt{W T}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{SET T=5}\\
+\texttt{KILL}\\
+\texttt{WRITE T}
+}
+
+\begin{frame}
+\frametitle{References}
+\begin{itemize}
+\item ``M Programming'', Richard F. Walters, Digital Press
+\end{itemize}
+\end{frame}
 
 \end{document}
