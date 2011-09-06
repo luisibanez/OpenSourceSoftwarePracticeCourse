@@ -236,7 +236,7 @@ Conversion
 
 \centeredsizedtext{black}{green}{96}{
 \texttt{S D="MARY 25"}\\
-\texttt{S K=D}\\
+\texttt{S K=2*D}\\
 \texttt{W K}
 }
 
@@ -285,6 +285,93 @@ Variables
 \texttt{KILL}\\
 \texttt{WRITE T}
 }
+
+\centeredlargetext{black}{white}{
+Logical\\
+Operators
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A=5 S B=6}\\
+\texttt{S C=(A=B)}\\
+\texttt{W C}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A=5 S B=6}\\
+\texttt{S C=(A>B)}\\
+\texttt{W C}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A=5 S B=6}\\
+\texttt{S C=(A<B)}\\
+\texttt{W C}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A="LINUX" S B="WINDOWS"}\\
+\texttt{S C=(A=B)}\\
+\texttt{W C}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A="LINUX" S B="WINDOWS"}\\
+\texttt{S C=A>B}\\
+\texttt{W C}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A="LINUX" S B="WINDOWS"}\\
+\texttt{S C=A<B}\\
+\texttt{W C}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A="GNULINUX" S B="GNU"}\\
+\texttt{S C=A$[$B}\\
+\texttt{W C}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A="Art" S B="Ane"}\\
+\texttt{S C=A$]$B}\\
+\texttt{W C}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A=4 S B=5 S C=6}\\
+\texttt{S D=(A<B)\&(A<C)}\\
+\texttt{W D}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A=4 S B=5 S C=6}\\
+\texttt{S D=(A<B)!(A<C)}\\
+\texttt{W D}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A=4 S B=5}\\
+\texttt{S C='(A<B)}\\
+\texttt{W C}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A=4 S B=5}\\
+\texttt{S C=(A<B)}\\
+\texttt{W C}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A=4 S B=5}\\
+\texttt{S C=(A'<B)}\\
+\texttt{W C}
+}
+
+
+
+
 
 \begin{frame}
 \frametitle{References}
