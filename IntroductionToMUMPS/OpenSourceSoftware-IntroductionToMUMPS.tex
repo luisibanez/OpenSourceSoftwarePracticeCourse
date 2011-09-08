@@ -369,8 +369,123 @@ Operators
 \texttt{W C}
 }
 
+\centeredlargetext{black}{white}{
+String\\
+Operations
+}
 
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A="OPEN" S B="SOURCE"}\\
+\texttt{S C=A\_B}\\
+\texttt{W C}
+}
 
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A="OPEN" S B="SOURCE"}\\
+\texttt{S C=A\_"-"\_B}\\
+\texttt{W C}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A="OPEN"}\\
+\texttt{W \$LENGTH(A)}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{W \$LENGTH("PIZZA","Z")}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{W \$LENGTH("CHICKEN","C")}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A="free as in freedom"}\\
+\texttt{S B="free as in free beer"}\\
+\texttt{W \$LENGTH(A\_B,"free")}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A="free as in freedom"}\\
+\texttt{W \$FIND(A,"freedom")}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A="free as in freedom"}\\
+\texttt{W \$FIND(A,"free")}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A="free as in freedom"}\\
+\texttt{S B=\$FIND(A,"free")}\\
+\texttt{W \$FIND(A,"free",B)}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A="free as in freedom"}\\
+\texttt{W \$EXTRACT(A,6,8)}\\
+\texttt{W \$EXTRACT(A,6,11)}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A="free as in freedom"}\\
+\texttt{W \$EXTRACT(A,6,\$LENGTH(A))}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A="free as in freedom"}\\
+\texttt{W \$EXTRACT(A,6,9999)}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A="free as in freedom"}\\
+\texttt{W \$PIECE(A," ",1)}\\
+\texttt{W \$PIECE(A," ",2)}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S B="September/8/2011"}\\
+\texttt{W \$PIECE(B,"/",1)}\\
+\texttt{W \$PIECE(B,"/",2)}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{W \$ASCII("A")}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{W \$ASCII("ABCD",1)}\\
+\texttt{W \$ASCII("ABCD",2)}\\
+\texttt{W \$ASCII("ABCD",3)}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{W \$CHAR(65)}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{W \$CHAR(\$ASCII("K"))}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{W \$ASCII(\$CHAR(66))}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{W \$CHAR(67,65,66)}
+}
+
+\centeredsizedtext{black}{green}{72}{
+\texttt{S A="free as in freedom"}\\
+\texttt{S F="freedom"}\\
+\texttt{S B="free beer"}\\
+\texttt{W \$TRANSLATE(A,F,B)}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A="free as in freedom"}\\
+\texttt{W \$TRANSLATE(A," ","-")}
+}
 
 
 \begin{frame}
