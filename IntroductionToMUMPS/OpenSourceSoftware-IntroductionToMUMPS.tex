@@ -521,6 +521,11 @@ Operations
 \texttt{W A}
 }
 
+\centeredlargetext{black}{white}{
+KILL\\
+Variables
+}
+
 \centeredsizedtext{black}{green}{96}{
 \texttt{S A=1,B=2,C=3}\\
 \texttt{KILL A}\\
@@ -550,6 +555,58 @@ Operations
 \texttt{KILL (B,C)}\\
 \texttt{W A W B W C}
 }
+
+\centeredlargetext{black}{white}{
+WRITE\\
+Formatted
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S NAME="Thomas Jefferson"}\\
+\texttt{S DOB="April/13/1743"}\\
+\texttt{W NAME," ",DOB}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{W "Name:",NAME," Date of Birth: ",DOB}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{W NAME,!,DOB}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{W \#,NAME,!,DOB}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{W \#!!,NAME,!,DOB}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{W \#!!,NAME,?10,DOB}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S LIFE=42 S NOW=2011}\\
+\texttt{W \#!?5,\$JUSTIFY(LIFE,10)}\\
+\texttt{W !?5,\$JUSTIFY(NOW,10)}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A=10.24 S B=356.234}\\
+\texttt{W \#!?5,\$JUSTIFY(A,10,3)}\\
+\texttt{W !?5,\$JUSTIFY(B,10,3)}
+}
+
+
+
+
+
+
+
+
+
 
 
 \begin{frame}
