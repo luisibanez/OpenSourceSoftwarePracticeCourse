@@ -487,6 +487,70 @@ Operations
 \texttt{W \$TRANSLATE(A," ","-")}
 }
 
+\centeredsizedtext{black}{green}{96}{
+\texttt{S (X,Y,Z)=197}\\
+\texttt{W X,Y,Z}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S X=197,Y=25,Z=X>Y}\\
+\texttt{W X," ",Y," ",Z}
+}
+
+\centeredsizedtext{black}{green}{48}{
+\texttt{S M="JAN/FEB/MR/APR/MAY"}\\
+\texttt{S A=\$PIECE(M,"/",1,2)}\\
+\texttt{S B=\$PIECE(M,"/",4,5)}\\
+\texttt{S C="MAR",M=A\_C\_B}
+}
+
+\centeredsizedtext{black}{green}{48}{
+\texttt{S M="JAN/FEB/MR/APR/MAY"}\\
+\texttt{S \$PIECE(M,"/",3)="MAR"}\\
+\texttt{W M}
+}
+
+\centeredsizedtext{black}{green}{48}{
+\texttt{S \$PIECE(DOB,"-",3)="1996"}\\
+\texttt{W DOB}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A="free as in freedom"}\\
+\texttt{S \$EXTRACT(A,12,18)="beer"}\\
+\texttt{W A}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A=1,B=2,C=3}\\
+\texttt{KILL A}\\
+\texttt{W A W B W C}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A=1,B=2,C=3}\\
+\texttt{KILL B,C}\\
+\texttt{W A W B W C}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A=1,B=2,C=3}\\
+\texttt{KILL}\\
+\texttt{W A W B W C}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A=1,B=2,C=3}\\
+\texttt{KILL (A)}\\
+\texttt{W A W B W C}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S A=1,B=2,C=3}\\
+\texttt{KILL (B,C)}\\
+\texttt{W A W B W C}
+}
+
 
 \begin{frame}
 \frametitle{References}
