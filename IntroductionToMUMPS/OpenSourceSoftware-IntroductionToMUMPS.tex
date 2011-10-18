@@ -599,10 +599,66 @@ Formatted
 \texttt{W !?5,\$JUSTIFY(B,10,3)}
 }
 
+\centeredsizedtext{black}{green}{96}{
+\texttt{S USGDP=13000000000}\\
+\texttt{W \#!!?10,USGDP}\\
+\texttt{W \$FNUMBER(USGDP,",",0)}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S V=42}\\
+\texttt{W \#!!?10,V}\\
+\texttt{W \$FNUMBER(V,"+",0)}
+}
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S V=-42}\\
+\texttt{W \#!!?10,V}\\
+\texttt{W \$FNUMBER(V,"-",0)}
+}
 
 
+\centeredsizedtext{black}{green}{96}{
+\texttt{S V=42}\\
+\texttt{W \#!!?10,V}\\
+\texttt{W \$FNUMBER(V,"T",0)}
+}
 
 
+\centeredsizedtext{black}{green}{96}{
+\texttt{S V=-42}\\
+\texttt{W \#!!?10,V}\\
+\texttt{W \$FNUMBER(V,"P",0)}
+}
+
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S V=42}\\
+\texttt{W \$FNUMBER(V,"+",2)}
+}
+
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{W \$X,\$Y}
+}
+
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{S \$X=30}\\
+\texttt{W "Hello"}
+}
+
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{READ "Name: ",NAME}\\
+\texttt{W NAME}
+}
+
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{R !,"Name:",N,!,"DOB:",D}\\
+\texttt{W !,N,!,D}
+}
 
 
 
