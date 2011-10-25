@@ -17,6 +17,19 @@
 \end{frame}
 }}
 
+\newcommand{\leftsizedtext}[4]{
+{
+\setbeamertemplate{navigation symbols}{}
+\setbeamercolor{background canvas}{bg={#1}}
+\color{#2}
+\begin{frame}[plain]
+\fontsize{#3}{#3}\selectfont
+\center
+\begin{flushleft}
+{#4}
+\end{flushleft}
+\end{frame}
+}}
 
 \newcommand{\centeredlargetext}[3]{
 {
@@ -661,7 +674,31 @@ Formatted
 }
 
 
+\centeredsizedtext{black}{white}{96}{
+Programming Mode
+}
 
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{ZEDIT "HelloWorld"}
+}
+
+
+\leftsizedtext{black}{blue}{96}{
+\texttt{LABEL1}\\
+\texttt{ WRITE "Hello World"}\\
+\texttt{ QUIT}\\
+}
+
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{ZLINK "HelloWorld"}
+}
+
+
+\centeredsizedtext{black}{green}{96}{
+\texttt{DO LABEL1\^ HelloWorld}
+}
 
 
 
