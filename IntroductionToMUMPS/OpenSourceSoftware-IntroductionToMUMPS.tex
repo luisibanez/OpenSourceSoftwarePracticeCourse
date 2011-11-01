@@ -712,10 +712,50 @@ Programming Mode
 \texttt{S:A>B R=5,Q=7}
 }
 
+
+\centeredsizedtext{black}{green}{28}{
+\texttt{S A=2,B=1}\\
+\texttt{S:A>B (R,Q)=9}
+}
+
+
 \centeredsizedtext{black}{green}{28}{
 \texttt{S A=2,B=1}\\
 \texttt{W:A>B "Message"}
 }
+
+
+\centeredsizedtext{black}{green}{28}{
+\texttt{S A=2,B=1}\\
+\texttt{IF A>B SET C=5}\\
+\texttt{W \$TEST}
+}
+
+
+\centeredsizedtext{black}{green}{28}{
+\texttt{S A=2,B=1}\\
+\texttt{IF A<B SET C=9}\\
+\texttt{W \$TEST}
+}
+
+
+\centeredsizedtext{black}{green}{28}{
+\texttt{S A=2,B=1,C=7}\\
+\texttt{IF A>B,C>B SET D=11}\\
+\texttt{W \$TEST}
+}
+
+
+\centeredsizedtext{black}{green}{28}{
+\texttt{S A=2,B=1}\\
+\texttt{IF A>B SET C=9}\\
+\texttt{IF  W "A is larger than B"}\\
+\texttt{IF  W "\$TEST is true"}
+}
+
+
+
+
 
 
 
